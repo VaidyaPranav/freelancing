@@ -1,0 +1,179 @@
+/* Gigs Page */
+.gigs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gigs-header {
+  margin-bottom: 3rem;
+}
+
+.gigs-header h1 {
+  font-size: 2rem;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.gigs-controls {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 250px;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.create-gig-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  border: 2px solid #e5e7eb;
+}
+
+.create-gig-form h2 {
+  color: #111827;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.create-gig-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.create-gig-form .form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.create-gig-form .form-input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.no-gigs {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+.gigs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.gig-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.gig-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.gig-status {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #dcfce7;
+  color: #166534;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.gig-status.assigned {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.gig-title {
+  color: #111827;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.gig-description {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.gig-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.gig-info .label {
+  color: #6b7280;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.gig-info .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #10b981;
+}
+
+.gig-info .owner-name {
+  color: #111827;
+  font-weight: 600;
+}
+
+.gig-card .btn-secondary {
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .gigs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gigs-controls {
+    flex-direction: column;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+}

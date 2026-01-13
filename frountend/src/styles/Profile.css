@@ -1,0 +1,133 @@
+/* Profile Page */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  padding: 2rem 1rem;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.profile-avatar {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.profile-header h1 {
+  color: #111827;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.profile-info {
+  margin-bottom: 2rem;
+}
+
+.info-group {
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #6366f1;
+}
+
+.info-group label {
+  color: #6b7280;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.info-group p {
+  color: #111827;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.info-group .status-active {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.profile-actions {
+  margin-bottom: 2rem;
+}
+
+.btn-logout {
+  width: 100%;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-logout:hover {
+  background: #dc2626;
+}
+
+.profile-tips {
+  background: #fef3c7;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid #f59e0b;
+}
+
+.profile-tips h3 {
+  color: #92400e;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.profile-tips ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-tips li {
+  color: #92400e;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.profile-tips li:before {
+  content: "✓ ";
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .profile-card {
+    padding: 1.5rem;
+  }
+
+  .profile-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .profile-avatar {
+    font-size: 3rem;
+  }
+}

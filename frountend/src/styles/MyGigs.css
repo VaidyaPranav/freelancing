@@ -1,0 +1,153 @@
+/* My Gigs Page */
+.my-gigs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.my-gigs-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.my-gigs-header h1 {
+  font-size: 2rem;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.my-gigs-header p {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  background: white;
+  color: #6366f1;
+  border: 2px solid #6366f1;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.95rem;
+}
+
+.filter-buttons button:hover {
+  background: #f3f4f6;
+}
+
+.filter-buttons button.active {
+  background: #6366f1;
+  color: white;
+}
+
+.no-gigs {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: white;
+  border-radius: 1rem;
+  border: 2px dashed #e5e7eb;
+  color: #6b7280;
+}
+
+.no-gigs p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.my-gigs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.my-gig-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-gig-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.my-gig-card .gig-status {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #dcfce7;
+  color: #166534;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.my-gig-card .gig-status.assigned {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.my-gig-card h3 {
+  color: #111827;
+  margin-bottom: 0.75rem;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.my-gig-card p {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.gig-stats {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.gig-stats span {
+  font-weight: 500;
+}
+
+.my-gig-card .btn-secondary {
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .my-gigs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+  }
+
+  .filter-buttons button {
+    width: 100%;
+  }
+}
